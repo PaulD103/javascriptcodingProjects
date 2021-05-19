@@ -1,5 +1,4 @@
 // set the array
-
 var numbers = new Array();
 
 for (var i = 0; i < 10; i++) {
@@ -10,11 +9,11 @@ console.log(numbers);
 function bubbleSort(arr) {
 var len = arr.length;
 
-  // For loops run the length of the input array to get each number for sorting
+  // for loops run the length of the input array to get each number for sorting
   for (var i = len; i > 0; i--) {
     for(j = 0; j<i; j++) {
 
-       // This condition is used to sort the numbers with a specific criterion
+       // this condition is used to sort the numbers with a specific criterion
        var smallerNumber;
        if(arr[j-1] >= arr[j]) {
          smallerNumber = arr[j];
@@ -26,5 +25,5 @@ var len = arr.length;
     console.log(numbers);
  }
 
- // Function is called
+ // function is called
  bubbleSort(numbers);
