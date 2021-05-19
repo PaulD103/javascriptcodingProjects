@@ -55,6 +55,7 @@ var numbers = new Array();
 for (var i = 0; i < 140; i++) {
 	numbers[i] = Math.random(0, 1) * 13;
 }
+console.log(numbers);
 ```
 ***
 
@@ -73,18 +74,13 @@ for (var i = 0; i < 140; i++) {
           // This condition is used to sort the numbers with a specific criterion
           var smallerNumber;
       	  if(arr[j-1] >= arr[j]) {
-<<<<<<< HEAD
-            smallerNumber = arr[j+1];
-            arr[j+1] = arr[j];
-            arr[j] = smallerNumber;
-=======
             smallerNumber = arr[j];
             arr[j] = arr[j-1];
             arr[j-1] = smallerNumber;
->>>>>>> 628b216e79b5df2cf3f75bd28d63a22e99159e01
       	  }
         }
       }
+      console.log(numbers);
     }
    ```
 ***
