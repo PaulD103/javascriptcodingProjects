@@ -5,6 +5,7 @@ The [Bubble Sort](https://www.w3resource.com/javascript-exercises/javascript-fun
 
 ## Functionality:
 ### First pass:
+
 * here the algorithm compares the first two elements and swaps them if 7 > 2 <hr>
 `[**7**,**2**,6,8,3,6,2,5,2] **=>** [**2**,**7**,6,8,3,6,2,5,2]`
 
@@ -17,6 +18,7 @@ The [Bubble Sort](https://www.w3resource.com/javascript-exercises/javascript-fun
 
 <hr>
 ### Second pass:
+
 `[**2**,**6**,7,3,6,2,5,8,2] **=>** [**2**,**6**,7,3,6,2,5,2,8]`
 
 **...**
@@ -25,6 +27,7 @@ The [Bubble Sort](https://www.w3resource.com/javascript-exercises/javascript-fun
 <hr>
 
 ### More runs until the end:
+
 `[2,2,2,3,5,6,6,7,8]`
 <br>
 
@@ -44,6 +47,7 @@ console.log(numbers);
 ```
 <hr>
 * In order to give the algorithm a meaning, a function is written that takes the numbers specified in the loop as parameters and sorts them
+
 ```javascript
    function bubbleSort(arr) {
    var len = arr.length;
