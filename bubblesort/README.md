@@ -7,6 +7,7 @@ The [Bubble Sort](https://www.w3resource.com/javascript-exercises/javascript-fun
 ### First pass:
 
 * here the algorithm compares the first two elements and swaps them if 7 > 2 <br>
+
 `[7,2,6,8,3,6,2,5,2] => [2,7,6,8,3,6,2,5,2]`
 
 * this principle is carried out until the previous number is not greater than the next
