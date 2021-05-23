@@ -11,12 +11,14 @@ The [Bubble Sort](https://www.w3resource.com/javascript-exercises/javascript-fun
 
 * this principle is carried out until the previous number is not greater than the next
 * as in this case, if 7 > 8 then the numbers would swap, but this is not the case
+
 `[2,6,**7**,**8**,3,6,2,5,2] **=>** [2,6,**7**,**8**,3,6,2,5,2]` <br>
 
 **...** sorts further down to the last number <br>
 `[2,6,7,3,6,2,5,**8**,**2**] **=>** [2,6,7,3,6,2,5,**2**,**8**]`
 
 <hr>
+
 ### Second pass:
 
 `[**2**,**6**,7,3,6,2,5,8,2] **=>** [**2**,**6**,7,3,6,2,5,2,8]`
