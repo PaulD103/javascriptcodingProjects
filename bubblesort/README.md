@@ -2,50 +2,36 @@
 
 The [Bubble Sort](https://www.w3resource.com/javascript-exercises/javascript-function-exercise-24.php) algorithm is the simplest sorting algorithm in which the neighboring elements are repeatedly exchanged if they are in the wrong order.
 <br>
-<br>
 
 ## Functionality:
-<br>
-
-**First pass:**  
-<br>
+**First pass:** <br>
 >(  **7**  **2**  6 8 3 6 2 5 2 ) **=>** (  **2**  **7**  6 8 3 6 2 5 2 )
 
-**-** here the algorithm compares the first two elements and swaps them if 7 > 2
-***
-**-** this principle is carried out until the previous number is not greater than the next \
-**-** as in this case, if 7 > 8 then the numbers would swap, but this is not the case
-<br>
+* here the algorithm compares the first two elements and swaps them if 7 > 2 <hr>
+* this principle is carried out until the previous number is not greater than the next
+* as in this case, if 7 > 8 then the numbers would swap, but this is not the case
 > ( 2 6 **7**  **8**  3 6 2 5 2 ) **=>** ( 2 6 **7**  **8**  3 6 2 5 2 )
 
-**. . .** sorts further down to the last number
-<br>
+**...** sorts further down to the last number <br>
 > ( 2 6 7 3 6 2 5 **8** **2** ) **=>** ( 2 6 7 3 6 2 5 **2** **8** )
-***
-**Second pass:**  
-<br>
+
+<hr>
+**Second pass:** <br>
 > ( **2** **6** 7 3 6 2 5 8 2 ) **=>** ( **2** **6** 7 3 6 2 5 2 8 )
 
 **...**
 > ( 2 6 3 6 2 5 7 **8** **2** ) **=>** ( 2 6 3 6 2 5 7 **2** **8** )
-***
+
+<hr>
 
 **More runs:**\
-**To the end:**
-
-<br>
-
+**To the end:** <br>
 > ( 2 2 2 3 5 6 6 7 8 )
-
-<br>
-<br>
 <br>
 
 ## Code
-<br>
-
-**-** here the numbers are determined which the algorithm uses for sorting \
-**-** in order to get random sizes in a certain size interval, I am using a for loop that creates bars depending on the length of the loop
+* here the numbers are determined which the algorithm uses for sorting
+* in order to get random sizes in a certain size interval, I am using a for loop that creates bars depending on the length of the loop <br>
 
 ```javascript
 // set the array
@@ -61,7 +47,7 @@ console.log(numbers);
 
 <br>
 
-**-** In order to give the algorithm a meaning, a function is written that takes the numbers specified in the loop as parameters and sorts them
+* In order to give the algorithm a meaning, a function is written that takes the numbers specified in the loop as parameters and sorts them
 
 ```javascript
    function bubbleSort(arr) {
@@ -83,12 +69,11 @@ console.log(numbers);
       console.log(numbers);
     }
    ```
-***
-
+<hr>
 <br>
 
-**-** Finally the function is called with the transferred parameter (numbers) \
-**-** then the numbers are called in the correctly sorted order
+* Finally the function is called with the transferred parameter (numbers)
+* then the numbers are called in the correctly sorted order
 
 
 ```javascript
