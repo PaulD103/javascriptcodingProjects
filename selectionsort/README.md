@@ -13,7 +13,7 @@ var min = i;
 
 for (var j = i; j < arr.length; j++){
 	if (arr[j] <= arr[min]){
-		min = j; // if the current number is greater than arr[j], then min will be changed to i
+		min = j; 
 	}
 }
 ```
