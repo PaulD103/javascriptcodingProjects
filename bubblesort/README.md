@@ -1,6 +1,6 @@
 # BubbleSort Algorithm
 
-The [Bubble Sort](https://www.w3resource.com/javascript-exercises/javascript-function-exercise-24.php) algorithm is the simplest sorting algorithm in which the neighboring elements are repeatedly exchanged if they are in the wrong order.
+The [Bubble Sort](https://www.w3schools.in/data-structures-tutorial/sorting-techniques/bubble-sort-algorithm/) algorithm is the simplest sorting algorithm in which the neighboring elements are repeatedly exchanged if they are in the wrong order.
 <br>
 
 ## Functionality:
