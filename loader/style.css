@@ -1,0 +1,168 @@
+@media screen and (min-width: 0px) {
+	section {
+		width: 100%;
+		height: calc(100vh - 130px);
+		position: static;
+		background-color: #fff;
+		margin-top: 0;
+		margin-left: 0;
+	}
+	section h1 {
+		height: 30px;
+		margin-top: 80px;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-family: arial;
+		font-size: 23px;
+		font-weight: 500;
+		color: #111;
+	}
+  #loader {
+    color: #000;
+    position: absolute;
+    font-size: 60px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    left: calc(50% - 0.5em);
+    top: 45%;
+    transform: translate(-50%, -50%);
+    -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+    animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  }
+  @-webkit-keyframes load6 {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  @keyframes load6 {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  @-webkit-keyframes round {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes round {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+	footer {
+		margin-top: 0px;
+		position: static;
+	}
+	.github_link {
+		position: fixed;
+		right: -100px;
+		bottom: -100px;
+		width: 200px;
+		height: 200px;
+		z-index: 100;
+		background-color: #0078ff;
+		text-align: center;
+		transform: rotate(-45deg);
+	}
+	.github_link a {
+		font-family: sans-serif;
+		font-size: 23px;
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	section {
+		width: 100%;
+		height: calc(80vh - 80px);
+		position: static;
+		background-color: #fff;
+		margin-top: 0;
+		margin-left: 0;
+	}
+	section h1 {
+		height: 30px;
+		margin-top: 20vh;
+		margin-left: 10%;
+		font-family: arial;
+		font-size: 23px;
+		font-weight: 500;
+		color: #111;
+	}
+  canvas {
+    margin-left: 10%;
+    margin-top: 80px;
+    margin-bottom: 50px;
+		width: 80%;
+  }
+	footer {
+		position: static;
+		margin-top: 200px;
+	}
+	.github_link {
+		position: fixed;
+		right: -100px;
+		bottom: -100px;
+		width: 200px;
+		height: 200px;
+		z-index: 100;
+		background-color: #0078ff;
+		text-align: center;
+		transform: rotate(-45deg);
+	}
+	.github_link a {
+		font-family: sans-serif;
+		font-size: 23px;
+		padding-top: 10px;
+		color: #fff;
+		text-decoration: none;
+	}
+}
