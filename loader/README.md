@@ -1,6 +1,6 @@
 # Loading Animation
 
-This is the loading animation, you can see on my [website](javascriptcoding.org), too.
+This is the loading animation, you can see on my [website](https://javascriptcoding.org), too.
 <br>
 
 ## Code
