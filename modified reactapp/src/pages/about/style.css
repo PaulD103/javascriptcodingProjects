@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+section {
+  padding-left: 10%;
+}
+.about h1 {
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-top: 10vh;
+}
+.about p {
+  font-size: 23px;
+  font-family: sans-serif;
+  margin-top: 20px;
+}
+.about a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #111;
+  font-size: 23px;
+  position: absolute;
+  bottom: 10vh;
+}
