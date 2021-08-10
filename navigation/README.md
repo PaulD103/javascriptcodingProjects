@@ -217,6 +217,8 @@ getShortestWay(currentVillage) {
 }
 ```
 
+#### Explenation
+
 This may look like extremely much code, but the functionality behind this code isn't that hard. <br>
 You start with the first village from where you want to start your journey. For this village you proof each neighbor and each connection. The nearest village, so the village with the shortest connection will the the next village, that will be visited. All next villages will be saved. In the next step all connection from the start village and all new neighbors from the current village, that was recursively called in the same function will be proofed. If the sum of one connection from the current Village to new neighbors with the connection from the start to the current village is greater than one connection from the start village to one neighbor, then we keep going with the new village as the new _currentVillage_. If not than we keep going with one village, that is the neighbor from the start village and where the connection is the shortest. This process will be done until we found our destination. <br>
 For more information, on how the algorithm works, make sure to check out this [YouTube tutorial](https://www.youtube.com/watch?v=FSm1zybd0Tk) about the Dijkstra algorithm.
