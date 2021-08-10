@@ -225,6 +225,7 @@ For more information, on how the algorithm works, make sure to check out this [Y
 ### Writing the graphical part
 
 For this part, the only thing I've done, was to add _draw()_ functions, to each class. <br>
+<br>
 
 #### Graphical functions in the _Navigation_ class
 
@@ -261,6 +262,7 @@ drawFinalPath(color) {
   }
 }
 ```
+<br>
 
 #### Graphical functions in the _Village_ class
 
