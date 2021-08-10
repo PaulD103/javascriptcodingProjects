@@ -4,9 +4,11 @@ This project was a little side project, that I coded in two days next to my othe
 <br>
 <hr>
 <br>
+
 ## First steps:
 
 In the beginning I started to create a canvas and set the constant sizes like the width and the height for the canvas.
+<br>
 
 ### Writing a class for the whole navigation and for each village:
 
@@ -66,7 +68,7 @@ class Village {
 ```
 
 In the class _Village_ I added an extra function _setAllNeighbors()_, that adds all neighbors of each village into the _this.neighbors_ array. This function uses the two dimensional array, that you'll see in the next step, to test if there's an connection.
-
+<br>
 
 ### Creating an one dimensional array, in which all the villages are saved:
 
@@ -83,8 +85,7 @@ let villageeight = new Village("M", 12000, NAVIGATIONWIDTH/2.6, NAVIGATIONWIDTH/
 let villages = new Array();
 villages.push(villageone, villagetwo, villagethree, villagefour, villagefive, villagesix, villageseven, villageeight);
 ```
-
-
+<br>
 
 ### Creating an two dimensional array, in which all the connections between each village are saved:
 
@@ -102,6 +103,7 @@ let connections = [
 ```
 
 This array sets all connections between each village. If there is a _-1_, this means, that there's no connection. _0_ means, that this is the same village and all the other numbers _greater than 0_ stand for a connection.
+<br>
 
 ### Coding the function, that returns the shortest path between two villages:
 
@@ -284,6 +286,7 @@ draw(ctx) {
   }
 }
 ```
+<br>
 
 ### Call the functions
 
