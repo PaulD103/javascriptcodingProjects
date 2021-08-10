@@ -67,7 +67,7 @@ class Village {
 }
 ```
 
-In the class _Village_ I added an extra function _setAllNeighbors()_, that adds all neighbors of each village into the _this.neighbors_ array. This function uses the two dimensional array, that you'll see in the next step, to test if there's an connection.
+In the class _Village_ I added an extra function _setAllNeighbors()_, that adds all neighbors of each village into the _this.neighbors_ array. This function uses the two dimensional array, that you'll see in the next step, to test if there's an connection. <br>
 <br>
 
 ### Creating an one dimensional array, in which all the villages are saved:
@@ -102,7 +102,7 @@ let connections = [
 ];
 ```
 
-This array sets all connections between each village. If there is a _-1_, this means, that there's no connection. _0_ means, that this is the same village and all the other numbers _greater than 0_ stand for a connection.
+This array sets all connections between each village. If there is a _-1_, this means, that there's no connection. _0_ means, that this is the same village and all the other numbers _greater than 0_ stand for a connection. <br>
 <br>
 
 ### Coding the function, that returns the shortest path between two villages:
