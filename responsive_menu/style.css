@@ -1,0 +1,213 @@
+@media only screen and (min-width: 0px) {
+  .desktop-navigation {
+    visibility: hidden;
+  }
+  nav {
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    margin: 0;
+    position: fixed;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.06),
+                0 2px 2px rgba(0,0,0,0.06),
+                0 4px 4px rgba(0,0,0,0.06),
+                0 6px 8px rgba(0,0,0,0.06);
+    z-index: 3;
+    font-family: sans-serif;
+  }
+  .menu-toggle {
+  	position: absolute;
+  	display: block;
+  	width: 50px;
+  	height: 50px;
+  	margin: 0 0 0 10px;
+  	padding: 0;
+  	float: left;
+  	background: transparent;
+  	text-decoration: none;
+  	z-index: 5;
+  }
+  #button-toggle {
+  	display: block;
+  	background-color: #E6E6E6;
+  	content: "";
+  	height: 2px;
+  	opacity: 1;
+    z-index: 5;
+  	position: absolute;
+  	transition: opacity 0.7s ease 0.0s, background 0.7s ease 0.0s;
+  	width: 25px;
+  	z-index: 500;
+  	left: 15px;
+  	top: 30px;
+  }
+  #button-toggle:before {
+  	background-color: #E6E6E6;
+  	content: "";
+  	height: 2px;
+  	left: -2px;
+  	position: absolute;
+  	top: -8px;
+  	transform-origin: center center 0;
+  	transition: transform 0.7s ease 0s, background 0.7s ease 0s;
+  	width: 25px;
+  }
+  #button-toggle:after {
+  	background-color: #E6E6E6;
+  	bottom: -8px;
+  	content: "";
+  	height: 2px;
+  	left: -2px;
+  	position: absolute;
+  	transform-origin: center center 0;
+  	transition: transform 0.7s ease 0s, background 0.7s ease 0s;
+  	width: 25px;
+  }
+  .mobile-sidebar.toggled-on {
+  	left: 0;
+  	top: 55px;
+  	background-color: #F2F2F2;
+  }
+
+  .mobile-navigation ul .toggled-on {
+  	display: block;
+  	background-color: #444;
+  }
+
+  .dropdown-toggle.toggled-on:after {
+  	content: "\E5C7";
+  }
+
+  #button-toggle.toggled-on {
+  	background-color: transparent;
+  }
+
+  #button-toggle.toggled-on:before {
+  		opacity: 1;
+  		transform: translate(0px, 8px) rotate(225deg);
+  }
+
+  #button-toggle.toggled-on:after {
+  	opacity: 1;
+  	transform: translate(0px, -8px) rotate(-225deg);
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 180px;
+    background-color: #88e1fe;
+    margin-right: 50px;
+    margin-top: 10px;
+    position: fixed;
+    right: 0;
+  }
+  .mobile-navigation ul {
+    position: fixed;
+    float: left;
+    height: calc(100vh - 60px);
+    width: 57%;
+    background-color: #88e1fe;
+    top: 60px;
+    margin: 0;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1),
+                0 2px 2px rgba(0,0,0,0.1),
+                0 4px 4px rgba(0,0,0,0.1),
+                0 6px 8px rgba(0,0,0,0.1);
+    padding-top: 70px;
+    left: -80%;
+    transition: 0.8s;
+    padding-left: 8%;
+  }
+  .mobile-navigation ul.active {
+    left: 0;
+  }
+  .mobile-navigation ul li {
+    display: block;
+    list-style-type: none;
+    height: 25px;
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  .mobile-navigation .navLinks {
+    text-decoration: none;
+    color: #333;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .mobile-navigation {
+    visibility: hidden;
+  }
+  .desktop-navigation {
+    visibility: visible;
+    z-index: 3;
+    position: fixed;
+    right: 0;
+    top: 20px;
+  }
+  nav {
+    width: 70%;
+    height: 50px;
+    background-color: #333;
+    right: 0;
+    top: 0;
+    margin: 20px 20px auto auto;
+    border-radius: 180px;
+    position: fixed;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1),
+                0 2px 2px rgba(0,0,0,0.1),
+                0 4px 4px rgba(0,0,0,0.1),
+                0 6px 8px rgba(0,0,0,0.1);
+    z-index: 3;
+    color: #F2F2F2;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 180px;
+    background-color: #88e1fe;
+    margin-left: 5px;
+    margin-top: 5px;
+    position: fixed;
+    right: auto;
+  }
+  nav ul {
+    float: right;
+    margin-right: 100px;
+  }
+  nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    height: 25px;
+    margin: -2px 70px 0 0;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #F2F2F2;
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  nav ul li a::after {
+    border-bottom: 2px solid #F2F2F2;
+    display: block;
+    width: 0;
+    margin-left: 50%;
+    transform: translateX(-20%);
+    content: '';
+    transition: 0.8s;
+    margin: 0;
+  }
+  nav ul li a:hover::after {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    transform: translateX(0);
+    content: '';
+  }
+}
